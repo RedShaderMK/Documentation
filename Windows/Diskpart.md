@@ -2,7 +2,7 @@
 
 ## 💽 Formatage d'un disque
 
-1. Lancer Diskpart dans une console en mode administrateur
+1. Lancer Diskpart dans le terminal en tant qu'administrateur
 2. Lister les disque avec `List disk`
 3. Sélectionner le disque avec `Select Disk n`, n est le numéro du disque
 4. Écrire la commande `clean`, cela efface le disque.
@@ -18,7 +18,7 @@
 
 9. Pour assigner une lettre de lecteur, il faut écrire `assign letter=UneLettre`
 
-## ⚙️ Assigner une lettre à un lecteur
+## 🛠️ Assigner une lettre à un lecteur
 
 Si un lecteur ne possède pas de lettre, il est possible de lui en assigner une :
 
