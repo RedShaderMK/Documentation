@@ -21,6 +21,7 @@
     > - UDF (Universal Disk Format; format ouvert et compatible avec Windows, macOS et GNU/Linux).
 
 7. Pour assigner une lettre de lecteur, il faut écrire `assign letter=UneLettre`
+8. Après cela, le lecteur est normalement disponible dans l'explorateur de fichier
 
 ## 🛠️ Assigner une lettre à un lecteur
 
