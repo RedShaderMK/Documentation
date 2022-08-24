@@ -20,7 +20,7 @@
     > - exFAT (successeur de FAT32, conçu pour les périphériques de stockage USB sans la limitation de 4 Giga-cotets).
     > - UDF (Universal Disk Format; format ouvert et compatible avec Windows, macOS et GNU/Linux).
 
-7.  Pour assigner une lettre de lecteur, il faut écrire `assign letter=UneLettre`
+7. Pour assigner une lettre de lecteur, il faut écrire `assign letter=UneLettre`
 
 ## 🛠️ Assigner une lettre à un lecteur
 
