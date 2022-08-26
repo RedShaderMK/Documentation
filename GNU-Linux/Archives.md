@@ -11,13 +11,15 @@ _To-do :_
 
 ## 💾 gzip
 
+### 📌 Compression
+
 Pour compresser un fichier :
 
 ```bash
 gzip 'fichier'
 ```
 
-Pour compresser plusieurs :
+Pour compresser plusieurs fichiers :
 
 ```bash
 gzip fichier1 fichier2 fichier3
@@ -28,6 +30,8 @@ Pour compresser un répertoire :
 ```bash
 gzip -r './dossier'
 ```
+
+### 📌 Décompression
 
 Pour décompresser un fichier :
 
@@ -59,10 +63,11 @@ Compresser la sortie d'une commande :
  echo "Lorem ipsum dolor sit amet sed consetetur" | gzip -c > file.txt.gz
  ```
 
-Petite liste des paramètres intéressant :
+ > ℹ️ La sortie de la commande `echo` sera directement compressé par gzip.
 
-- Le niveau de compression peut être changé via un paramètre via -X  
-    > Il va de 1 (plus faible) à 9 (plus fort).
-- Par défaut, le fichier original est supprimé après la compression ou la décompression. Pour le conserver, il faut ajouter le paramètre `-k`
-    > La commande `gzip -c fichier > fichier.gz` fonctionne aussi
-- Pour afficher les informations, on peut utiliser le paramètre `-v`.
+### 🗒️ Petite liste des paramètres intéressants
+
+- Le niveau de compression peut être changé via un paramètre via `-n` (Remplacer n par un chiffre)
+    >  ℹ️ Il va de 1 (compression la plus faible) à 9 (compression la plus forte).
+- Par défaut, le fichier original est supprimé après la compression ou la décompression. Pour le conserver, il faut ajouter le paramètre `-k`.
+- Pour avoir une sortie plus détaillé, on peut utiliser le paramètre `-v`.
