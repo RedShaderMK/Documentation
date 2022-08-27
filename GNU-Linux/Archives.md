@@ -101,7 +101,7 @@ Arguments :
    --best              alias for -9
 ```
 
-### 🗜️ LZMA
+## 🗜️ LZMA
 
 Paramètre de LZMA :
 
