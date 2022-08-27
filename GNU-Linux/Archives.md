@@ -167,7 +167,7 @@ Pour extraire une archive :
 tar xvf 'archives.tar'
 ```
 
-Aruments :
+Arguments :
 
 ```text
 -c                  Permet la construction de l'archive
