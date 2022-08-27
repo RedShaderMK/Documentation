@@ -185,11 +185,13 @@ Aruments :
 
 Pax est un utilitaire d'archivage qui gère la compression de fichier très volumineux avec beaucoup de sous-répertoires.
 
-Pour archiver plusieurs fichiers et dossiers :
+Pour archiver plusieurs fichiers :
 
 ```bash
 pax -wf 'archives.pax' 'fichier1' 'fichier2'
 ```
+
+Pour archiver un dossier :
 
 ```bash
 pax -wf 'archives.pax' './dossier/'
