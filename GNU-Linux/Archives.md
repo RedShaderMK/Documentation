@@ -147,3 +147,33 @@ Arguments :
   -H, --long-help     display the long help (lists also the advanced options)
   -V, --version       display the version number and exit
   ```
+
+## 🗜️ Tar
+
+Tar (tape archiver) est un utilitaire d'archivage sans _compression_. Il préserve les droits, les propriétaires ainsi que les groupes des fichiers et des dossiers. Il permet aussi de sauvegarder les liens symboliques.
+
+Pour archiver un ou plusieurs fichiers :
+
+```bash
+tar cvf archive.tar 'fichier1' ['fichier2' 'fichier3']
+```
+
+Pour archiver un dossier :
+
+```bash
+tar cvf archive.tar './dossier/'
+
+Pour extraire une archive :
+
+```bash
+tar xvf 'archives.tar'
+```
+
+Aruments :
+-c                  Permet la construction de l'archive
+-x                  Permet l'extraction de l'archive
+-v                  Mode verbeux
+-f                  Utilise un fichier donné en paramètre
+-z                  Compression avec gzip
+-j                  Compression avec bzip2
+-J                  Compression avec LZMA
