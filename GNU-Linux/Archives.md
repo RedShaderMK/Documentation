@@ -170,6 +170,8 @@ tar xvf 'archives.tar'
 ```
 
 Aruments :
+
+```text
 -c                  Permet la construction de l'archive
 -x                  Permet l'extraction de l'archive
 -v                  Mode verbeux
@@ -177,3 +179,33 @@ Aruments :
 -z                  Compression avec gzip
 -j                  Compression avec bzip2
 -J                  Compression avec LZMA
+```
+
+## 🗜️ Pax
+
+Pax est un utilitaire d'archivage qui gère la compression de fichier très volumineux avec beaucoup de sous-répertoires.
+
+Pour archiver plusieurs fichiers et dossiers :
+
+```bash
+pax -wf 'archives.pax' 'fichier1' 'fichier2'
+```
+
+```bash
+pax -wf 'archives.pax' './dossier/'
+```
+
+Extraction d'une archive :
+
+```bash
+pax -rf 'archives.pax'
+```
+
+Arguments :
+
+```text
+-w                  Permet la construction de l'archive
+-r                  Permet l'extraction de l'archive
+-z                  Compression avec gzip
+-j                  Compression avec bzip2
+```
