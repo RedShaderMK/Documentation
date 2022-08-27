@@ -1,13 +1,11 @@
 # 🗄️ Archivage sous GNU/Linux
 
-_To-do :_
-
-- [x] Gzip
-- [x] bzip2
-- [ ] LZMA
-- [ ] LZW
-- [ ] TAR
-- [ ] PAX
+- [🗄️ Archivage sous GNU/Linux](#️-archivage-sous-gnulinux)
+  - [🗜️ gzip](#️-gzip)
+  - [🗜️ Bzip2](#️-bzip2)
+  - [🗜️ LZMA](#️-lzma)
+  - [🗜️ Tar](#️-tar)
+  - [🗜️ Pax](#️-pax)
 
 ## 🗜️ gzip
 
