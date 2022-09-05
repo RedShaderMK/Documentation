@@ -17,6 +17,6 @@ Il existe différentes classes d'adresses :
 
 ℹ️ Exeptions :  
 
-- L'adresse <span style="color:blue">`127.0.0.1`</span> est réservé au test de connexion.
+- L'adresse `127.0.0.1` est réservé au test de connexion.
 - La classe D est une classe réservé pour le multicast.
 - La classe E est réservé pour des test.
