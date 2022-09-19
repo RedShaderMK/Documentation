@@ -4,7 +4,7 @@ Samba est un logiciel libre dont le but est de créer un serveur de fichier via 
 
 ## Installation
 
-### Les paquets
+### 📦 Les paquets
 
 > ℹ️ J'utilise aptitude pour installer les paquets, mais apt-get fonctionne aussi.
 
@@ -26,7 +26,7 @@ On va vérifier la version installé avec la commande :
 smbd --version
 ```
 
-## Démarrage
+## 🖱 Démarrage
 
 On va démarrer le serveur avec la commande :
 
@@ -46,7 +46,7 @@ Pour activer le démarrage automatique :
 sudo systemctl enable smbd
 ```
 
-## Configuration du serveur de fichier
+## 🗃 Configuration du serveur de fichier
 
 Pour créer nos partage, on va devoir modifier le fichier de configuration de samba :
 
