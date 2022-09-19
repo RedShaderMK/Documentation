@@ -82,7 +82,7 @@ Pour que la modification soit prise en compte, il faut redémarrer le serveur sa
 systemctl restart smdb
 ```
 
-## Création de l'utilisateur
+## 👤 Création de l'utilisateur
 
 Nous allons créer l'utilisateur et le groupe de partage.
 
