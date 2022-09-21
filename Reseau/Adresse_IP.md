@@ -20,3 +20,15 @@ Il existe différentes classes d'adresses :
 - L'adresse `127.0.0.1` est réservé au test de connexion.
 - La classe D est une classe réservé pour le multicast.
 - La classe E est réservé pour des test.
+
+## Calculer le nombre d'hôte d'un masque
+
+Voici un exemple de calcul des sous-réseaux :
+
+Pour un masque de sous réseau `255.255.240.0`, il faut déjà le passer en binaire, ce qui donne :  
+`1111 1111.1111 1111.1111 0000.0000 0000`.
+
+Il faut prendre la partie hôte qui est `240.0` donc `1111 0000.0000 0000`.
+
+On veut y ajouter 8 sous réseaux donc on va chercher la puissance de 2 qui correspond. Celle-ci est 3 car 2^3 = 8.  
+On va donc ajouter 3 bits à `1111 0000` ce qui donne `1111 1110`.
