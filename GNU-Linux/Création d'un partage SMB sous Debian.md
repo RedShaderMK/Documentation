@@ -133,7 +133,7 @@ Il faut maintenant attribuer le dossier au groupe de partage :
 chgrp -R partage /shr/partage/
 ```
 
-Il faut ensuite ajouter les droits de lectures et d'écriture sur le dossier :
+Il faut ensuite ajouter les droits de lectures et d'écritures sur le dossier :
 
 ```bash
 chmod -R g+rw /shr/partage/
