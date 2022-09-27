@@ -1,5 +1,12 @@
 # Installation de Windows Serveur 2022
 
+Sommaire :  
+
+1. ***Installation de Windows Server***
+2. [Configuration de base](./ConfigurationBase.md)
+3. [Active Directory](./ActiveDirectory.md)
+4. [Le DHCP](./DHCP.md)
+
 Cet article va traiter de l'installation de Windows Server 2022.  
 
 1. Selectionner la langue, le format horaire et monétaire ainsi que la clavier.  
