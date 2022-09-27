@@ -44,7 +44,7 @@ Cet article va traiter de l'installation de Windows Server 2022.
 
     ![Ecran mot de passe](./res/Install08.png)
 
-9. La confiuration est terminé, vous pouvez vous connecter à Windows Server.  
+9. La confiuration est **✅terminé**, vous pouvez vous connecter à Windows Server.  
    > ℹ Ne pas oublier de faire les mises à jour
 
     ![Bureau Windows](./res/Install09.png)
