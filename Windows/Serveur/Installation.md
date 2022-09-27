@@ -7,6 +7,8 @@ Sommaire :
 3. [Active Directory](./ActiveDirectory.md)
 4. [Le DHCP](./DHCP.md)
 
+___
+
 Cet article va traiter de l'installation de Windows Server 2022.  
 
 1. Selectionner la langue, le format horaire et monétaire ainsi que la clavier.  
