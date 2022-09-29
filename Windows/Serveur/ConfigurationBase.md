@@ -13,7 +13,7 @@ Dans un premier temps, après l'ouverture de session cette fenêtre va apparaitr
 
 ![Gestionnaire de serveur](./res/Config01.png)
 
-1. On va commencer par changer son adresse IP. Comme il s'agit d'un serveur, son IP doit être fixe. Vous devez ouvrir le programme exécuter avec `Win + CTRL`. Saisissez `ncpa.cpl` dans la fenêtre.  
+1. On va commencer par changer son adresse IP. Comme il s'agit d'un serveur, son IP doit être fixe. Vous devez ouvrir le programme exécuter avec `🪟 + CTRL`. Saisissez `ncpa.cpl` dans la fenêtre.  
 
     ![Fenêtre exécuter](./res/Config02.png)
 
@@ -30,7 +30,7 @@ Dans un premier temps, après l'ouverture de session cette fenêtre va apparaitr
 
     ![Fenêtre IP](./res/Config05.png)
 
-5. On va maintenant modifier le nom du système, pour cela, faite `Win + CTRL`. Taper `sysdm.cpl`.  
+5. On va maintenant modifier le nom du système, pour cela, faite `🪟 + CTRL`. Taper `sysdm.cpl`.  
 
     ![Fenêtre exécuter](./res/Config06.png)
 
