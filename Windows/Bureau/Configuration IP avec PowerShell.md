@@ -46,10 +46,16 @@ Set-NetIPInterface -InterfaceIndex n -Dhcp Disabled
 
 Pour définir l'adresse du DNS, il faut récupérer, soit l'index de l'interface, soit le nom de l'interface. Pour ce faire, il faut utiliser la commande ci-dessous :  
 
-```bash
+```powershell
 Get-DnsClientServerAddress
 ```
 
 Vous devriez avoir un résultat comme ceci :  
 
 <!-- Insérer une image d'illustration ici -->
+
+Ensuite, il faut entrer la commande là pour définir l'adresse DNS de l'interface réseau désiré :
+
+```powershell
+Get-DnsClientServerAddress -InterfaceIndex n -ServerAdress ("adresse primaire", "adresse secondaire")
+```
