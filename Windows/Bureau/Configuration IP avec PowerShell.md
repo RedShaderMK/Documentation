@@ -10,7 +10,7 @@ Avant de commancer, on doit récupérer l'index ou le nom de l'interface à laqu
 Get-NetIPInterface
 ```
 
-et  
+ou  
 
 ```powershell
 Get-NetAdapter
@@ -20,7 +20,7 @@ Voici un exemple de ce qu'on obtient :
 
 ![Interface réseau](./res/InterfaceReseauPwsh.png)
 
-## Ajout d'une adresse IP
+## 📌 Ajout d'une adresse IP
 
 Pour changer ajouter une adresse IP à une interface, il faut tapper la commande :  
 
@@ -66,4 +66,12 @@ Ensuite, il faut entrer la commande là pour définir l'adresse DNS de l'interfa
 
 ```powershell
 Set-DnsClientServerAddress -InterfaceIndex n -ServerAdress ("adresse primaire", "adresse secondaire")
+```
+
+## 📌 Supprimer l'adresse du DNS
+
+Pour supprimer une adresse DNS statique, il faut ajouter l'argument `-ResetServerAddresses` à la commande `Set-DnsClientServerAddress` :  
+
+```powershell
+Set-DnsClientServerAddress -InterfaceIndex n -ResetServerAddresses
 ```
