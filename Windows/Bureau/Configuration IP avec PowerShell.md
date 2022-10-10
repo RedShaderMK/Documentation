@@ -57,5 +57,5 @@ Vous devriez avoir un résultat comme ceci :
 Ensuite, il faut entrer la commande là pour définir l'adresse DNS de l'interface réseau désiré :
 
 ```powershell
-Get-DnsClientServerAddress -InterfaceIndex n -ServerAdress ("adresse primaire", "adresse secondaire")
+Set-DnsClientServerAddress -InterfaceIndex n -ServerAdress ("adresse primaire", "adresse secondaire")
 ```
