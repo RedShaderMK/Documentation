@@ -1,6 +1,6 @@
 # 🗒️ Introduction
 
-Ce dépôt regroupe mes différentes documentions que j'ai créé pour mon usage personnelle.  
+Ce dépôt regroupe mes différentes documentions que j'ai créé pour mon usage personnel.  
 Sommaire :  
 
 - [Windows](./Windows/)
