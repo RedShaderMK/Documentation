@@ -50,10 +50,6 @@ Pour définir l'adresse du DNS, il faut récupérer, soit l'index de l'interface
 Get-DnsClientServerAddress
 ```
 
-Vous devriez avoir un résultat comme ceci :  
-
-<!-- Insérer une image d'illustration ici -->
-
 Ensuite, il faut entrer la commande là pour définir l'adresse DNS de l'interface réseau désiré :
 
 ```powershell
