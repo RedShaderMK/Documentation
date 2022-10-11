@@ -2,6 +2,14 @@
 
 Il est possible de voir, modifier ou supprimer la configuration IP de son ordinateur avec PowerShell.
 
+- [🛠️ Configuration IP avec PowerShell](#️-configuration-ip-avec-powershell)
+  - [📌 Choisir l'interface réseau](#-choisir-linterface-réseau)
+  - [📌 Ajout d'une adresse IP](#-ajout-dune-adresse-ip)
+  - [📌 Suppression d'une adresse IP](#-suppression-dune-adresse-ip)
+  - [📌 Activer ou désactiver la configuration DHCP](#-activer-ou-désactiver-la-configuration-dhcp)
+  - [📌 Définir l'adresse du DNS](#-définir-ladresse-du-dns)
+  - [📌 Supprimer l'adresse du DNS](#-supprimer-ladresse-du-dns)
+
 ## 📌 Choisir l'interface réseau
 
 Avant de commancer, on doit récupérer l'index ou le nom de l'interface à laquelle on veut changer l'adresse IP. Il existe deux commande qui permettent d'obtenir cette information, les voici :  
