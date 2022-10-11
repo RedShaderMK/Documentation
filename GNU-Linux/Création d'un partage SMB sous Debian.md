@@ -3,14 +3,14 @@
 Samba est un logiciel libre dont le but est de créer un serveur de fichier via une implémentation libre du protocole SMB/CIFS de Microsoft Windows (qui lui est propriétaire). Samba permet en plus du partage de fichier, de partager des imprimantes.
 
 - [🛠 Création d'un partage SMB sous Debian](#-création-dun-partage-smb-sous-debian)
-  - [Installation](#installation)
+  - [💽 Installation](#-installation)
     - [📦 Les paquets](#-les-paquets)
   - [🖱 Démarrage](#-démarrage)
   - [🗃 Configuration du serveur de fichier](#-configuration-du-serveur-de-fichier)
   - [👤 Création de l'utilisateur](#-création-de-lutilisateur)
   - [📁 Partage d'un dossier](#-partage-dun-dossier)
 
-## Installation
+## 💽 Installation
 
 ### 📦 Les paquets
 
