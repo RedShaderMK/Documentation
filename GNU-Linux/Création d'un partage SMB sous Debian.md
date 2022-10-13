@@ -5,8 +5,8 @@ Samba est un logiciel libre dont le but est de créer un serveur de fichier via 
 - [🛠 Création d'un partage SMB sous Debian](#-création-dun-partage-smb-sous-debian)
   - [💽 Installation](#-installation)
     - [📦 Les paquets](#-les-paquets)
-  - [🖱 Démarrage](#-démarrage)
-  - [🗃 Configuration du serveur de fichier](#-configuration-du-serveur-de-fichier)
+    - [🖱 Démarrage](#-démarrage)
+    - [🗃 Configuration du serveur de fichier](#-configuration-du-serveur-de-fichier)
   - [👤 Création de l'utilisateur](#-création-de-lutilisateur)
   - [📁 Partage d'un dossier](#-partage-dun-dossier)
 
@@ -34,7 +34,7 @@ On va vérifier la version installé avec la commande :
 smbd --version
 ```
 
-## 🖱 Démarrage
+### 🖱 Démarrage
 
 On va démarrer le serveur avec la commande :
 
@@ -54,7 +54,7 @@ Pour activer le démarrage automatique :
 sudo systemctl enable smbd
 ```
 
-## 🗃 Configuration du serveur de fichier
+### 🗃 Configuration du serveur de fichier
 
 Pour créer nos partage, on va devoir modifier le fichier de configuration de samba :
 
