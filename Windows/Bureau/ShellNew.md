@@ -41,4 +41,4 @@ Il est possible d'ajouter un type de fichier dans ce menu. Voici comment faire :
 
 8. Redémarrer votre ordinateur.
 
-![Résultat](./res/shellnew/shellnew09git.png)
+![Résultat](./res/shellnew/shellnew09.png)
