@@ -1,4 +1,4 @@
-# Ajout d'un type de fichier dans "Nouveau" du menu contextuel
+# 🛠️ Ajout d'un type de fichier dans "Nouveau" du menu contextuel
 
 Dans Windows, on peut créer un fichier directement depuis le menu contextuel avec l'option "Nouveau" qui affiche un sous-menu avec une liste de fichier.  
 Il est possible d'ajouter un type de fichier dans ce menu. Voici comment faire :  
