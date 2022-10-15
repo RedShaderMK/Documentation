@@ -13,4 +13,27 @@ Robocopy est intégré nativement depuis Windows Vista.
 
 ## 🛠️ Utilisation  
 
-À venir
+Voici la commande base pour utiliser robocopy :  
+
+```dos
+robocopy <source> <destination> [<file>[ ...]] [<options>]
+```
+
+|   Paramètres    |                     Description                       |
+|:--------------- |:----------------------------------------------------- |
+| `source`        | Le répertoire source                                  |
+| `destination`   | Le répertoire de destination                          |
+| `file`          | Les fichiers à copié. Par défaut, la valeur est `*.*` |
+| `option`        | Les options de robocopy                               |
+
+Exemple :  
+
+```dos
+robocopy 'C:\Works' 'D:\Backup' *.*
+```
+
+Exemple pour la sauvegarde du profil utilisateur :  
+
+```dos
+robocopy "C:\Works" "D:\Backup" /MIR /FFT /XA:SH /XD AppData /XJD /R:5 /W:15 /MT:32 /V /NP /Z /LOG:Backup.log
+```
