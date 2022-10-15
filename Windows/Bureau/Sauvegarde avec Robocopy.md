@@ -35,5 +35,24 @@ robocopy 'C:\Works' 'D:\Backup' *.*
 Exemple pour la sauvegarde du profil utilisateur :  
 
 ```dos
-robocopy "C:\Works" "D:\Backup" /MIR /FFT /XA:SH /XD AppData /XJD /R:5 /W:15 /MT:32 /V /NP /Z /LOG:Backup.log
+robocopy "C:\Works" "D:\Backup" /MIR /FFT /XA:SH /XD AppData /XJD /R:5 /W:15 /MT:32 /V /NP /Z /LOG:RapportSauvegarde.log
 ```
+
+|   Paramètres         |                     Description                       |
+|:-------------------- |:----------------------------------------------------- |
+| /MIR                 | Permet de créer un mirroir du dossier copié           |
+| /FFT                 | Calcule l'heure des fichiers FAT                      |
+| /XA:SH               | Permet l'exclusion des fichiers systèmes et cachés    |
+| /XD `nom du dossier` | Permet l'exclusion d'un dossier (ici AppData)         |
+| /XJD                 | Permet d'exclure les jonctions de répertoires         |
+| /R:`n`               | Nombre d'essai maximale si la copie échoue            |
+| /W:`n`               | Délai entre chaque essai                              |
+| /MT:`n`              | Permet de définir le nombre de threads                |
+| /Z                   | Permet de copié les fichiers en mode redémarrable     |
+| /V                   | Mode verbeux                                          |
+| /NP                  | Permet de ne pas affiché la progression de la copie   |
+| /LOG:`fichier.log`   | Permet de créer un log de la copie                    |
+
+## 📎 Autres ressources
+
+[Plus de détails sur robocopy](https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/robocopy)
