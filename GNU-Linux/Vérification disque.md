@@ -48,4 +48,4 @@ sudo badblocks -svn /dev/sda
 >
 > -n : Effectue un test de lecture-écriture non destructif.
 
-- La vérification des secteurs peut prendre du temps, surtout si le disque à tester est de grande tailler et peu rapide.
+- La vérification des secteurs peut prendre du temps, surtout si le disque à tester est de grande taille et peu rapide.
