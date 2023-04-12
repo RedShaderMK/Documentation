@@ -24,7 +24,7 @@ Pour obtenir les détails d'un compte utilisateur précis :
 Get-LocalUser -Name 'NomUtilisateur' | Select-Object *
 ```
 
-> ℹ️ Il est possible de filtrer les champs en remplaçant * par le nom du champs.
+> ℹ️ Il est possible de filtrer les champs en remplaçant * par le nom du champs (par exemple `PasswordChangeableDate`).
 
 ## 2. Pour ajouter un utilisateur
 
