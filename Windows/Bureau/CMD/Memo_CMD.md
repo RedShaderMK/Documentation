@@ -60,7 +60,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 18. SFC  
     Cette commande permet la vérification et la réparation des fichiers système (/SCANNOW)
 
-19. SHUTDOWN
+19. SHUTDOWN  
     Cette commande permet d'éteindre l'ordinateur.
 
 20. HELP  
