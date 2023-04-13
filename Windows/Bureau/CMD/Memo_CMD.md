@@ -9,6 +9,12 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 1. IPCONFIG  
     Cette commande permet d'afficher les informations détaillé sur la configuration IP de la carte réseau de l'ordinateur. Cette commande permet aussi de libérer et de renouveler l'adresse IP de l'ordinateur.
 
+    `/all` : Affiche toutes les informations de condifuration.  
+    `/release` : Libère l'adresse IPv4 pour la carte spécifiée.  
+    `/renew` : Renouvelle l'adresse IPv4 de la carte spécifié.  
+    `/flushdns` : Purge le cache de résolution DNS.  
+    `/registerdns` : Actualise tous les baux DHCP et réenregistre les noms DNS.  
+
 2. PING  
     Cette commande permet de tester l'accessibilité d'un périphérique sur le réseau (comme un ordinateurn un serveur ou une imprimante).
 
