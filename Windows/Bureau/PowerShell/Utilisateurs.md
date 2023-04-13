@@ -19,19 +19,19 @@ Get-Command -Module Microsoft.PowerShell.LocalAccounts
 
 ## 1. Obtenir les utilisateurs
 
-Pour obtenir la liste des utilisateurs, il faut utiliser la commande suivante :
+Il est possible d'obtenir l'ensemble des utilisateurs de l'ordinateur avec une commande. Par défaut, la commande va afficher le nom du compte ainsi que so état d'activation et ça description :
 
 ```powershell
 Get-LocalUser
 ```
 
-Pour obtenir les détails d'un compte utilisateur précis :
+Il est possible d'obtenir plus de détails pour un compte précis en spécifiant le nom du compte ainsi qu'en ajoutant un pipe et `Select-Object` suivi d'une étoile :
 
 ```powershell
 Get-LocalUser -Name 'NomUtilisateur' | Select-Object *
 ```
 
-> ℹ️ Il est possible de filtrer les champs en remplaçant * par le nom du champs.
+> ℹ️ Il est possible de filtrer les champs en remplaçant * par le nom du champs (par exemple `PasswordChangeableDate`). Sans spécifier de nom, la commande va afficher tous les utilisateurs avec leur détails.
 
 ## 2. Pour ajouter un utilisateur
 
