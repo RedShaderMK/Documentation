@@ -16,13 +16,19 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     `/registerdns` : Actualise tous les baux DHCP et réenregistre les noms DNS.  
 
 2. PING  
-    Cette commande permet de tester l'accessibilité d'un périphérique sur le réseau (comme un ordinateurn un serveur ou une imprimante).
+    Cette commande permet de tester l'accessibilité d'un périphérique sur le réseau (comme un ordinateurn un serveur ou une imprimante).  
+
+    `ping` + nom de l'hôte ou adresse IP.  
 
 3. TRACERT  
     Cette commande permet de déterminer l'itinéraire vers une adresse IP ou d'un nom d'hôte. Cela permet de connaitre en détails le chemin parcouru par le paquets ICMP.
 
+    `tracert` + nom d'hôte ou adresse IP.  
+
 4. NETSTAT  
     Cette commande permet d'afficher les connexions réseau actives et les statistiques de réseau associées. Elle peut être utilisée pour afficher les connexions TCP/IP actives et les ports sur lesquels l’ordinateur local est à l’écoute.
+
+    `netstat -a`
 
 5. NSLOOKUP  
     Cette commande permet d'effectuer une recherche DNS (Domain Name System) pour trouver l’adresse IP d’un nom d’hôte ou le nom d’hôte correspondant à une adresse IP. Elle peut également être utilisée pour afficher des informations sur les serveurs DNS et les enregistrements DNS associés.
