@@ -1,11 +1,11 @@
+# 🧑‍💻 Gestion des utilisateurs
+
 - [🧑‍💻 Gestion des utilisateurs](#-gestion-des-utilisateurs)
   - [Voir la listes des commandes](#voir-la-listes-des-commandes)
   - [1. Obtenir les utilisateurs](#1-obtenir-les-utilisateurs)
   - [2. Pour ajouter un utilisateur](#2-pour-ajouter-un-utilisateur)
   - [3. Pour modifier un utilisateur](#3-pour-modifier-un-utilisateur)
   - [4. Suppression d'un utilisateur](#4-suppression-dun-utilisateur)
-
-# 🧑‍💻 Gestion des utilisateurs
 
 PowerShell permet de gérer les utilisateurs ainsi que les groupes locaux de Windows avec des cmdlets PowerShell. Microsoft propose une collection de cmdlets appelée Microsoft.PowerShell.LocalAccounts pour gérer plus facilement les utilisateurs et groupes locaux avec PowerShell. Vous pouvez ajouter, supprimer et modifier des utilisateurs et des groupes locaux avec PowerShell.
 
