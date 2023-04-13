@@ -63,5 +63,5 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 19. SHUTDOWN
     Cette commande permet d'éteindre l'ordinateur.
 
-20. HELP
+20. HELP  
     Cette commande permet d'afficher l'aide.
