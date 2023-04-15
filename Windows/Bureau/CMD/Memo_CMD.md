@@ -1,8 +1,65 @@
-# Liste des commandes pratique de CMD
+# 📋 Liste des commandes pratiques de CMD
+
+![CMD](../res/cmd/cmd_illu.png)
 
 ## 📜 Introduction
 
 L’invite de commande (cmd.exe) est un interpréteur de commandes pour les systèmes d’exploitation Windows qui permet aux utilisateurs d’exécuter des commandes et des scripts à partir d’une interface en ligne de commande. Il est souvent utilisé pour effectuer des tâches de maintenance système, telles que la gestion de fichiers et de dossiers, la configuration du réseau et la résolution des problèmes. La disponibilité des commande cmd.exe dépendent de la version de Windows. Ici, je ne vais donner les commandes disponibles qu'à partir de Windows 10 et Windows 11.
+
+## 📁 Système de fichiers
+
+1. **CD** ou **CHDIR**
+
+    Cette commande permet de se déplacer dans l'arborescence.  
+    `CD chemin du répertoire`
+
+2. **DIR**
+
+    Affiche le contenu d'un répertoire.  
+    `DIR` : Affiche le contenu du répertoire courant.  
+    `DIR dossier` : Affiche le contenu du répertoire du répertoire spécifié.
+
+3. **MD** ou **MKDIR**
+
+    Cette commande permet la création d'un ou plusieurs répertoires.  
+    `MD dossier` : Création d'un dossier.  
+    `MD dossier1 dossier2 dossier3` : Création de plusieurs dossier.
+
+4. **RD** ou **RMDIR**
+
+   Cette commande permet la suppression de répertoire vide (ou non vide avec `/S`).  
+    `RD dossier` : Supprime un dossier vide.  
+    `RD /S dossier` : Supprime un dossier non vide.
+
+5. **COPY**
+
+    Permet la copie de fichiers.  
+    `COPY .\fichier.txt ..\Desktop\fichier.txt /V` : Copie un fichier avec vérification (`/V`).
+
+6. **XCOPY**
+
+    Permet la copie de fichier et de dossiers.  
+    `XCOPY A:\ B:\` : Copie les fichiers et les dossiers du lecteur `A:` vers le lecteur `B:`.
+
+7. **MOVE**
+
+    Permet de déplacer ou renommer un fichier ou un dossier.  
+    `MOVE fichier1 fichier2` : Renomme `fichier1` en `fichier2`.
+
+8. **DEL**
+
+    Permet la suppression d'un ou plusieurs fichiers.  
+    `DEL fichier1 fichier2 fichier3` : Supprimer les fichiers spécifiés.
+
+9. **REN**
+
+    Permet de renommer les fichiers et les dossiers.  
+    `REN fichier1 fichier2` : Renomme `fichier1` en `fichier2`.
+
+10. **TYPE**
+
+    Permet d'afficher le contenu d'un fichier texte (`.txt`, `.csv`, `.xml`, etc...).  
+    `TYPE rapport.log` : Affiche le contenu de `rapport.log`.
 
 ## 📌 20 commandes les plus utiles
 
@@ -18,7 +75,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 2. PING  
     Cette commande permet de tester l'accessibilité d'un périphérique sur le réseau (comme un ordinateurn un serveur ou une imprimante).  
 
-    `ping` + nom de l'hôte ou adresse IP.  
+    `ping` + nom de l'hôte ou adresse IP.   
 
 3. TRACERT  
     Cette commande permet de déterminer l'itinéraire vers une adresse IP ou d'un nom d'hôte. Cela permet de connaitre en détails le chemin parcouru par le paquets ICMP.
@@ -32,6 +89,8 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
 5. NSLOOKUP  
     Cette commande permet d'effectuer une recherche DNS (Domain Name System) pour trouver l’adresse IP d’un nom d’hôte ou le nom d’hôte correspondant à une adresse IP. Elle peut également être utilisée pour afficher des informations sur les serveurs DNS et les enregistrements DNS associés.
+
+    `nslookup` + nom de domaine.  
 
 6. ARP  
     La commande arp est utilisée pour afficher et modifier les tables de cache ARP (Address Resolution Protocol) utilisées pour traduire les adresses IP en adresses MAC (Media Access Control) sur un réseau local.
