@@ -146,8 +146,9 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
     Affiche ou modifie la compression de fichiers sur les partitions NTFS.  
     `COMPACT /C /S` : Compresse le contenu du dossier et des sous-dossier où l'on se trouve.  
-    `COMPACT /C /S /EXE:<Algorithmes>` : Compresse le contenu du dossier et des sous-dossier où l'on se trouve avec l'algorithmes spécifié en paramètre.  
     `COMPACT /C` + fichier ou dossier : Compresse le fichier spécifié.  
+
+    L'ajout du paramètre `/EXE:<Algorithmes>` permet de spécifier l'algorithme à utiliser.
 
     Les algorithmes  
 
