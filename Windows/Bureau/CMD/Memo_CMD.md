@@ -11,7 +11,9 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 1. **CD** ou **CHDIR**
 
     Cette commande permet de se déplacer dans l'arborescence.  
-    `CD chemin du répertoire`
+    `CD chemin du répertoire` : Se déplace vers le répertoire spécifié.  
+    `CD \` : Se déplace au début de l'arborescence.  
+    `CD \D D:\` ou `D:` : Change de lecteur vers le lecteur spécifié.
 
 2. **DIR**
 
@@ -61,6 +63,104 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     Permet d'afficher le contenu d'un fichier texte (`.txt`, `.csv`, `.xml`, etc...).  
     `TYPE rapport.log` : Affiche le contenu de `rapport.log`.
 
+11. **TREE**
+
+    Permet d'afficher graphiquement la structure de dossiers d’un lecteur ou d’un chemin.  
+    `TREE` : Affiche les répertoires uniquement.  
+    `TREE /F` : Affiche les répertoires et les fichiers.  
+    `TREE /A` : Force l'utilisation de caractères ASCII.
+
+## 💻 Système
+
+1. **CHKDSK**
+
+    Permet de vérifier l'état d'un disque.  
+    `CHKDSK C:` : Affiche l'état du disque.  
+    `CHKDSK /F C:` : Affiche et corrige l'état du disque.  
+    `CHKDSK /R C:` : Localise les secteurs défectueux.  
+
+2. **DOSKEY**
+
+    Permet de créer des macros pour exécuter une ou plusieurs commandes.  
+    `DOSKEY LS=DIR` : Créer une macro qui permet d'éxecuter la commande `DIR` avec la macro `LS`.
+
+3. **CLIP**
+
+    Permet de rediriger la sortie d'une commande dans le presse-papier.  
+    `DIR | CLIP` : Copie le résultat de la commande `DIR` vers le presse-papier.  
+    `CLIP < README.md` : Copie le contenu du fichier dans le presse-papier.  
+
+4. **VER**
+
+    Permet d'afficher la version de Windows.  
+    `VER`
+
+5. **ASSOC**
+
+    Permet d'afficher ou de modifier les associations des extensions de fichiers.  
+    `ASSOC` : Affiche toutes les association des extensions de fichiers.  
+    `ASSOC .txt` : Affiche l'association du type de fichier `.txt`.  
+    `ASSOC .log=txtfile` / Associe `.log` au type de fichier texte.  
+    `ASSOC .log=` : Supprime l'association de l'extension `.log` (il faut ajouter un esapce après le =).  
+
+6. **FTYPE**
+
+    Affiche ou modifie les types de fichiers utilisés dans les associations d’extension de fichiers.  
+    `FTYPE txtfile=C:\Windows\System32\notepad.exe "%1"` : Spécifie le bloc-note comme programme par défaut pour l'ouverture des fichiers de type texte.  
+
+7. **ATTRIB**
+
+    Permet d'afficher, de définir ou de supprimer les attribus de lecture seule, d'archivage, système et masqué assignés aux fichiers et répertoires.  
+    `ATTRIB +R fichier.txt` : Ajoute (+) l'attribut de lecture seul au fichier.  
+    `ATTRIB -R fichier.txt` : Supprime (-) l'attribut de lecture seul au fichier.  
+
+    Liste des attributs
+    | Attribut | Description |
+    | --- | --- |
+    | `R` | Lecture seule |
+    | `A` | Archive |
+    | `S` | Système |
+    | `H` | Masqué |
+    | `I` | Contenu non indexé |
+
+8. **CIPHER**
+
+    Permet le chiffrement des fichiers et des répertoires sur un volume **NTFS** (donc non disponible sur les autres systèmes de fichier).  
+    `CIPHER` + fichier ou répertoire : Affiche l'état de chiffre du fichier ou du dossier spécifié.  
+    `CIPHER /E` + fichier ou répertoire : Chiffre le fichier ou le dossier spécifié.  
+    `CIPHER /D` + fichier ou répertoire : Déchiffre le fichier ou le dossier spécifié.  
+    `CIPHER /C` + fichier ou répertoire : Affiche les informations de chiffrement sur+ le fichier ou le dossier spécifié.  
+    `CIPHER /S:<répertoire>` : Chiffre le contenu du répertoire et des sous-répertoires.  
+
+9. **COMP**
+
+    Permet de comparer deux fichiers.  
+    `COMP fichier1.txt fichier2.txt /L` : Compare deux fichiers texte et affiche les numéros de lignes.  
+
+10. **FC**
+
+    Permet de comparer deux fichiers ou ensembles de fichiers et d'afficher les différences entre eux.  
+    `FC fichier1 fichier2` : Compare les deux fichiers spécifié.  
+
+11. **COMPACT**
+
+    Affiche ou modifie la compression de fichiers sur les partitions NTFS.  
+    `COMPACT /C /S` : Compresse le contenu du dossier et des sous-dossier où l'on se trouve.  
+    `COMPACT /C /S /EXE:<Algorithmes>` : Compresse le contenu du dossier et des sous-dossier où l'on se trouve avec l'algorithmes spécifié en paramètre.  
+    `COMPACT /C` + fichier ou dossier : Compresse le fichier spécifié.  
+
+    Les algorithmes  
+
+    | Algorithme | Description |
+    | --- | --- |
+    | `XPRESS4K` | Valeur la plus rapide et la valeur par défaut |
+    | `XPRESS8K` |  |
+    | `XPRESS16K` |  |
+    | `LZX` | Le plus compact |
+
+12. **EXPAND**
+13. **MKLINK**
+
 ## 📌 20 commandes les plus utiles
 
 1. IPCONFIG  
@@ -75,7 +175,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 2. PING  
     Cette commande permet de tester l'accessibilité d'un périphérique sur le réseau (comme un ordinateurn un serveur ou une imprimante).  
 
-    `ping` + nom de l'hôte ou adresse IP.   
+    `ping` + nom de l'hôte ou adresse IP.
 
 3. TRACERT  
     Cette commande permet de déterminer l'itinéraire vers une adresse IP ou d'un nom d'hôte. Cela permet de connaitre en détails le chemin parcouru par le paquets ICMP.
