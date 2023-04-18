@@ -12,8 +12,9 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
     Cette commande permet de se déplacer dans l'arborescence.  
     `CD chemin du répertoire` : Se déplace vers le répertoire spécifié.  
+    `CD ..` : Permet de remonter dans l'arboresence.  
     `CD \` : Se déplace au début de l'arborescence.  
-    `CD \D D:\` ou `D:` : Change de lecteur vers le lecteur spécifié.
+    `CD /D D:\` ou `D:` : Change de lecteur vers le lecteur spécifié.
 
 2. **DIR**
 
