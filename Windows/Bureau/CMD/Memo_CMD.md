@@ -150,7 +150,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
     L'ajout du paramètre `/EXE:<Algorithmes>` permet de spécifier l'algorithme à utiliser.
 
-    Les algorithmes  
+    *Les algorithmes*  
 
     | Algorithme | Description |
     | --- | --- |
