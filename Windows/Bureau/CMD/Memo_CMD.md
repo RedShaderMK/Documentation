@@ -159,8 +159,15 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     | `XPRESS16K` |  |
     | `LZX` | Le plus compact |
 
-12. **EXPAND**
-13. **MKLINK**
+12. **MKLINK**
+
+    Permet de créer un lien symbolique.  
+    `MKLINK <Lien> <Cible>` : Créer un lien symbolique d'un fichier vers une cible.  
+    `MKLINK /D <Lien> <Cible>` : Créer un lien symbolique d'un répertoire vers une cible.  
+    `MKLINK /H <Lien> <Cible>` : Créer un lien physique vers une cible, cela permet d'avoir copie exact d'un fichier qui va garder un lien avec le fichier d'origine. Les modifications de l'un va se répercuter vers l'autre.  
+    `MKLINK /J <Lien> <Cible>` : Créer une jonction d'un répertoire vers une cible.
+
+    > ℹ️ Note : Les paramètres `/D` et `/J` donne le même résultat mais `/J` offre plus de compatibilité avec les logiciels.
 
 ## 📌 20 commandes les plus utiles
 
