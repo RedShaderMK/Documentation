@@ -107,6 +107,10 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     Affiche le contenu d'un ou plusieurs fichiers textes.  
     `TYPE <fichier>` : Affiche le contenu du fichier spécifié.  
 
+22. **ERASE**  
+    Supprime un ou plusieurs fichiers.  
+    `ERASE <fichier>` : Supprime le fichier spécifié.  
+
 ## 💻 Système
 
 1. **CHKDSK**  
