@@ -111,6 +111,21 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     Supprime un ou plusieurs fichiers.  
     `ERASE <fichier>` : Supprime le fichier spécifié.  
 
+## 🧑‍💻 Utilisateurs
+
+1. **NET USER**  
+   Permet de gérer les utilisateurs.  
+   `NET USER <nom d'utilisateur> <mot de passe> /ADD` : Permet d'ajouter l'utilisateur spécifié avec le mot de passe.  
+   `NET USER <nom d'utilisateur> <mot de passe>` : Remplace le mot de passe actuel par le mot de passe spécifié.  
+   `NET USER <nom d'utilisateur> /DELETE` : Permet de supprimer l'utilisateur spécifié.  
+
+2. **NET LOCALGROUP**  
+   Permet de gérer les groupes.  
+   `NET LOCALGROUP <nom du groupe> /ADD` : Ajoute le groupe spécifié.  
+   `NET LOCALGROUP <nom du groupe> /DELETE` : Supprime le groupe spécifié.  
+   `NET LOCALGROUP <nom du groupe> <nom d'utilisateur> /ADD` : Ajoute l'utilisateur au groupe spécifié.  
+   `NET LOCALGROUP <nom du groupe> <nom d'utilisateur>` : Change le groupe de l'utilisateur selon de le groupe spécifié.  
+
 ## 💻 Système
 
 1. **CHKDSK**  
@@ -306,7 +321,6 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     Affiche les statistiques du protocole et les connexions TCP/IP actuelles utilisant NBT (NetBIOS sur TCP/IP).  
     `NBTSTAT /a <nom>` : Affiche la table de noms NetBIOS d’un ordinateur distant en spécifiant le nom NetBIOS.  
     `NBTSTAT /A <ip>` : Affiche la table de noms NetBIOS d'un ordinateur distant en spécifiabt son IP.  
-
 
 ## 💽 Disques et partitions
 
