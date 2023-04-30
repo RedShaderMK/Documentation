@@ -276,16 +276,37 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 5. **NSLOOKUP**  
     Cette commande permet d'effectuer une recherche DNS (Domain Name System) pour trouver l’adresse IP d’un nom d’hôte ou le nom d’hôte correspondant à une adresse IP. Elle peut également être utilisée pour afficher des informations sur les serveurs DNS et les enregistrements DNS associés.
 
-    `nslookup` + nom de domaine.  
+    `nslookup <domaine>` : Trouve l'enregistrement du nom de domaine spécifié.  
 
 6. **ARP**  
-    La commande arp est utilisée pour afficher et modifier les tables de cache ARP (Address Resolution Protocol) utilisées pour traduire les adresses IP en adresses MAC (Media Access Control) sur un réseau local.
+    Affiche et modifie les tables de traduction d'adresses IP en adresses physiques utilis�es par le protocole de r�solution d'adresses ARP.  
+    `ARP -A` : Affiche les tables de cache ARP pour toutes les interfaces.  
+    `ARP -D <ip>` : Efface une entrée de cache ARP spécifié.  
+    `ARP -S <ip> <mac>` : Ajoute une entrée de cache ARP avec l'adresse spécifié.  
 
 7. **ROUTE**  
     La commande route est utilisée pour afficher et modifier la table de routage IP utilisée par le système d’exploitation pour déterminer le chemin que les paquets IP doivent emprunter pour atteindre leur destination.
 
 8. **NETSH**  
     Cette commande est utilisée pour configurer et afficher les paramètres réseau.
+
+9. **FTP**  
+    Transfère des fichiers vers et depuis un ordinateur avec un service de serveur FTP activé.  
+    `FTP ftp.bobpony.com` : Permet de se connecter sur le serveur FTP spécifié.  
+
+10. **GETMAC**  
+    Cet outil permet à un administrateur d’afficher l’adresse
+    MAC des cartes réseaux d’un ordinateur.  
+    `GETMAC /V` : Affiche les les adresses MAC de l'ordinateur avec les détails (`/V).  
+
+11. **HOSTNAME**  
+    Affiche ke nom de l'hôte actuel.  
+
+12. **NBTSTAT**  
+    Affiche les statistiques du protocole et les connexions TCP/IP actuelles utilisant NBT (NetBIOS sur TCP/IP).  
+    `NBTSTAT /a <nom>` : Affiche la table de noms NetBIOS d’un ordinateur distant en spécifiant le nom NetBIOS.  
+    `NBTSTAT /A <ip>` : Affiche la table de noms NetBIOS d'un ordinateur distant en spécifiabt son IP.  
+
 
 ## 💽 Disques et partitions
 
