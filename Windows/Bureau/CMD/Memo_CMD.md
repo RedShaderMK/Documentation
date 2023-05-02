@@ -1,6 +1,16 @@
 # 📋 Liste des commandes pratiques de CMD
 
+> Testé sur Windows 10 et 11.
+
 ![CMD](../res/cmd/cmd_illu.png)
+
+- [📋 Liste des commandes pratiques de CMD](#-liste-des-commandes-pratiques-de-cmd)
+  - [📜 Introduction](#-introduction)
+  - [📁 Système de fichiers](#-système-de-fichiers)
+  - [🧑‍💻 Utilisateurs](#-utilisateurs)
+  - [💻 Système](#-système)
+  - [🌍 Réseau et internet](#-réseau-et-internet)
+  - [💽 Disques et partitions](#-disques-et-partitions)
 
 ## 📜 Introduction
 
