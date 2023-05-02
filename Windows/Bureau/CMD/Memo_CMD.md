@@ -237,7 +237,10 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     `LOGOFF` + id de session : Ferme la session dont l'id est spécifié.
 
 19. **SHUTDOWN**  
-    Cette commande permet d'éteindre l'ordinateur.
+    Cette commande permet d'éteindre l'ordinateur.  
+    `/R` : Redémarrage.  
+    `/S` : Arrêt.  
+    `/O` : Combiné avec `R` permet l'accès aux options de récuprération de Windows.  
 
 20. **REGEDIT**  
     Cette commande est utilisée pour afficher et modifier les paramètres du registre Windows.
