@@ -36,7 +36,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
 6. **XCOPY**  
     Permet la copie de fichier et de dossiers.  
-    `XCOPY A:\ B:\` : Copie les fichiers et les dossiers du lecteur `A:` vers le lecteur `B:`.
+    `XCOPY /I /S A:\ B:\` : Copie les fichiers et les dossiers du lecteur `A:` vers le lecteur `B:`. Le paramètre /I va créer le répertoire de destination si il n'existe pas. Le paramètre /S spécifie de copier tous les fichiers et répertoires sauf ceux vides.  
 
 7. **MOVE**  
     Permet de déplacer ou renommer un fichier ou un dossier.  
@@ -44,7 +44,8 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
 8. **DEL**  
     Permet la suppression d'un ou plusieurs fichiers.  
-    `DEL fichier1 fichier2 fichier3` : Supprimer les fichiers spécifiés.
+    `DEL fichier1 fichier2 fichier3` : Supprimer les fichiers spécifiés.  
+    `DEL *.ext` : Supprime les fichiers dont l'extension à été spécifié.  
 
 9. **REN**  
     Permet de renommer les fichiers et les dossiers.  
@@ -118,13 +119,15 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
    `NET USER <nom d'utilisateur> <mot de passe> /ADD` : Permet d'ajouter l'utilisateur spécifié avec le mot de passe.  
    `NET USER <nom d'utilisateur> <mot de passe>` : Remplace le mot de passe actuel par le mot de passe spécifié.  
    `NET USER <nom d'utilisateur> /DELETE` : Permet de supprimer l'utilisateur spécifié.  
+   `NET USER <nom d'utilisateur> /ACTIVE:<choix>` : Permet d'activer ou de désactiver un compte utilisateur. Il faut choisir entre `YES`et `NO`.  
 
 2. **NET LOCALGROUP**  
    Permet de gérer les groupes.  
    `NET LOCALGROUP <nom du groupe> /ADD` : Ajoute le groupe spécifié.  
    `NET LOCALGROUP <nom du groupe> /DELETE` : Supprime le groupe spécifié.  
-   `NET LOCALGROUP <nom du groupe> <nom d'utilisateur> /ADD` : Ajoute l'utilisateur au groupe spécifié.  
+   `NET LOCALGROUP <nom du groupe> <nom d'utilisateur> /ADD` : Ajoute l'utilisateur au groupe spécifié. Il est possible de spécifier plusieurs utilisateurs à ajouter au groupe.  
    `NET LOCALGROUP <nom du groupe> <nom d'utilisateur>` : Change le groupe de l'utilisateur selon de le groupe spécifié.  
+   `NET LOCALGROUP <nom du groupe> <nom d'utilisateur> /DELETE` : Supprime l'utilisateur spécifié du groupe. Il est aussi possible de spécifier plusieurs utilisateurs.  
 
 ## 💻 Système
 
@@ -321,6 +324,11 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     Affiche les statistiques du protocole et les connexions TCP/IP actuelles utilisant NBT (NetBIOS sur TCP/IP).  
     `NBTSTAT /a <nom>` : Affiche la table de noms NetBIOS d’un ordinateur distant en spécifiant le nom NetBIOS.  
     `NBTSTAT /A <ip>` : Affiche la table de noms NetBIOS d'un ordinateur distant en spécifiabt son IP.  
+
+13. **NET USE**  
+    Permet de connecter et déconnecter des lecteurs réseau.  
+    `NET USE <lettre>: \\<chemin UNC> /USER:<nom d'utilisateur> <mot de passe>` : Connecte un lecteur réseau. Le paramètre `/USER`spécifie le nom d'utilisateur et son mot de passe si le partage le demande.  
+    `NET USE <lettre>: /DELETE` : Déconnecte le lecteur réseau selon la lettre spécifié.  Remplacer la lettre par `*` déconnecte tous les lecteurs réseau.  
 
 ## 💽 Disques et partitions
 
