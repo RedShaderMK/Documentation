@@ -129,7 +129,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
    `NET USER <nom d'utilisateur> <mot de passe> /ADD` : Permet d'ajouter l'utilisateur spécifié avec le mot de passe.  
    `NET USER <nom d'utilisateur> <mot de passe>` : Remplace le mot de passe actuel par le mot de passe spécifié.  
    `NET USER <nom d'utilisateur> /DELETE` : Permet de supprimer l'utilisateur spécifié.  
-   `NET USER <nom d'utilisateur> /ACTIVE:<choix>` : Permet d'activer ou de désactiver un compte utilisateur. Il faut choisir entre `YES`et `NO`.  
+   `NET USER <nom d'utilisateur> /ACTIVE:<choix>` : Permet d'activer ou de désactiver un compte utilisateur. Il faut choisir entre `YES` et `NO`.  
 
 2. **NET LOCALGROUP**  
    Permet de gérer les groupes.  
