@@ -25,102 +25,97 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     `CD \` : Se déplace au début de l'arborescence.  
     `CD /D D:\` ou `D:` : Change de lecteur vers le lecteur spécifié.
 
-2. **DIR**  
+2. **CLS**  
+    Efface l'écran.
+    `CLS`
+
+3. **COMP**  
+    Permet de comparer deux fichiers.  
+    `COMP fichier1.txt fichier2.txt /L` : Compare deux fichiers texte et affiche les numéros de lignes.
+
+4. **COPY**  
+    Permet la copie de fichiers.  
+    `COPY .\fichier.txt ..\Desktop\fichier.txt /V` : Copie un fichier avec vérification (`/V`).
+
+5. **DEL**  
+    Permet la suppression d'un ou plusieurs fichiers.  
+    `DEL fichier1 fichier2 fichier3` : Supprimer les fichiers spécifiés.  
+    `DEL *.ext` : Supprime les fichiers dont l'extension à été spécifié.
+
+6. **DIR**  
     Affiche le contenu d'un répertoire.  
     `DIR` : Affiche le contenu du répertoire courant.  
     `DIR dossier` : Affiche le contenu du répertoire du répertoire spécifié.
 
-3. **MD** ou **MKDIR**  
+7. **ERASE**  
+    Supprime un ou plusieurs fichiers.  
+    `ERASE <fichier>` : Supprime le fichier spécifié.
+
+8. **EXIT**  
+    Quitte le programme ou le script.  
+    `EXIT`
+
+9. **FC**  
+    Permet de comparer deux fichiers ou ensembles de fichiers et d'afficher les différences entre eux.  
+    `FC fichier1 fichier2` : Compare les deux fichiers spécifié.
+
+10. **FIND**  
+    Permet de chercher une chaine de caractère dans un fichier ou une sortie.  
+    `FIND /N "<Chaine>" <fichier>` : Recherche la chaine spécifié dans le fichier spécifié. Le paramètre `/N` affiche les numéros de ligne.
+
+11. **FINDSTR**  
+    Permet de chercher une chaine de caractère dans un fichier ou une sortie.  
+    `FINDSTR <Chaine> <fichier>` : Recherche la chaine spécifié dans le fichier spécifié. Le paramètre `/N` affiche les numéros de ligne.  
+    `FINDSTR /S /I <Chaine> *.*` : Recherche la chaine spécifié dans les fichiers du répertoire et les sous-répertoire selon l'extensions de fichier spécifié.
+
+12. **MD** ou **MKDIR**  
     Cette commande permet la création d'un ou plusieurs répertoires.  
     `MD dossier` : Création d'un dossier.  
     `MD dossier1 dossier2 dossier3` : Création de plusieurs dossier.
 
-4. **RD** ou **RMDIR**  
+13. **MKLINK**  
+    Permet de créer un lien symbolique.  
+    `MKLINK <Lien> <Cible>` : Créer un lien symbolique d'un fichier vers une cible.  
+    `MKLINK /D <Lien> <Cible>` : Créer un lien symbolique d'un répertoire vers une cible.  
+    `MKLINK /H <Lien> <Cible>` : Créer un lien physique vers une cible, cela permet d'avoir copie exact d'un fichier qui va garder un lien avec le fichier d'origine. Les modifications de l'un va se répercuter vers l'autre.  
+    `MKLINK /J <Lien> <Cible>` : Créer une jonction d'un répertoire vers une cible.  
+    > ℹ️ Note : Les paramètres `/D` et `/J` donne le même résultat mais `/J` offre plus de compatibilité avec les logiciels.
+
+14. **MORE**  
+    Affiche les sorties écran par écran. Permet aussi d'afficher le contenu d'un fichier texte.  
+    `MORE <Fichier>` : Affiche le contenu du fichier spécifié.  
+    `CHKDSK /? | MORE /C /E` : Affiche la sortie de la commande (ici l'aide de la commande `CHKDSK`) et l'affiche page par page. Il faut appuyer sur la touche espace pour faire défiler les pages, ou entré pour faire du ligne par ligne. `/C`permet d'effacer l'écran avant l'affichage.
+
+15. **MOVE**  
+    Permet de déplacer ou renommer un fichier ou un dossier.  
+    `MOVE fichier1 fichier2` : Renomme `fichier1` en `fichier2`.
+
+16. **RD** ou **RMDIR**  
    Cette commande permet la suppression de répertoire vide (ou non vide avec `/S`).  
     `RD dossier` : Supprime un dossier vide.  
     `RD /S dossier` : Supprime un dossier non vide.
 
-5. **COPY**  
-    Permet la copie de fichiers.  
-    `COPY .\fichier.txt ..\Desktop\fichier.txt /V` : Copie un fichier avec vérification (`/V`).
-
-6. **XCOPY**  
-    Permet la copie de fichier et de dossiers.  
-    `XCOPY /I /S A:\ B:\` : Copie les fichiers et les dossiers du lecteur `A:` vers le lecteur `B:`. Le paramètre /I va créer le répertoire de destination si il n'existe pas. Le paramètre /S spécifie de copier tous les fichiers et répertoires sauf ceux vides.  
-
-7. **MOVE**  
-    Permet de déplacer ou renommer un fichier ou un dossier.  
-    `MOVE fichier1 fichier2` : Renomme `fichier1` en `fichier2`.
-
-8. **DEL**  
-    Permet la suppression d'un ou plusieurs fichiers.  
-    `DEL fichier1 fichier2 fichier3` : Supprimer les fichiers spécifiés.  
-    `DEL *.ext` : Supprime les fichiers dont l'extension à été spécifié.  
-
-9. **REN**  
+17. **REN**  
     Permet de renommer les fichiers et les dossiers.  
     `REN fichier1 fichier2` : Renomme `fichier1` en `fichier2`.
 
-10. **TYPE**  
-    Permet d'afficher le contenu d'un fichier texte (`.txt`, `.csv`, `.xml`, etc...).  
-    `TYPE rapport.log` : Affiche le contenu de `rapport.log`.
+18. **SORT**  
+    Permet de trier le texte d'une commande ou d'un fichier.  
+    `SORT <fichier1> > <fichier2>` : Trie le contenu du fichier 1 et place le résultat dans le fichier 2.  Le paramètre `/R` permet d'inverser le sens du tris.
 
-11. **TREE**  
+19. **TREE**  
     Permet d'afficher graphiquement la structure de dossiers d’un lecteur ou d’un chemin.  
     `TREE` : Affiche les répertoires uniquement.  
     `TREE /F` : Affiche les répertoires et les fichiers.  
     `TREE /A` : Force l'utilisation de caractères ASCII.
 
-12. **COMP**  
-    Permet de comparer deux fichiers.  
-    `COMP fichier1.txt fichier2.txt /L` : Compare deux fichiers texte et affiche les numéros de lignes.  
+20. **TYPE**  
+    Permet d'afficher le contenu d'un fichier texte (`.txt`, `.csv`, `.xml`, etc...).  
+    `TYPE <fichier>` : Affiche le contenu du fichier spécifié.
 
-13. **FC**  
-    Permet de comparer deux fichiers ou ensembles de fichiers et d'afficher les différences entre eux.  
-    `FC fichier1 fichier2` : Compare les deux fichiers spécifié.  
-
-14. **MKLINK**  
-    Permet de créer un lien symbolique.  
-    `MKLINK <Lien> <Cible>` : Créer un lien symbolique d'un fichier vers une cible.  
-    `MKLINK /D <Lien> <Cible>` : Créer un lien symbolique d'un répertoire vers une cible.  
-    `MKLINK /H <Lien> <Cible>` : Créer un lien physique vers une cible, cela permet d'avoir copie exact d'un fichier qui va garder un lien avec le fichier d'origine. Les modifications de l'un va se répercuter vers l'autre.  
-    `MKLINK /J <Lien> <Cible>` : Créer une jonction d'un répertoire vers une cible.
-
-    > ℹ️ Note : Les paramètres `/D` et `/J` donne le même résultat mais `/J` offre plus de compatibilité avec les logiciels.
-
-15. **FIND**  
-    Permet de chercher une chaine de caractère dans un fichier ou une sortie.  
-    `FIND /N "<Chaine>" <fichier>` : Recherche la chaine spécifié dans le fichier spécifié. Le paramètre `/N` affiche les numéros de ligne.  
-
-16. **FINDSTR**  
-    Permet de chercher une chaine de caractère dans un fichier ou une sortie.  
-    `FINDSTR <Chaine> <fichier>` : Recherche la chaine spécifié dans le fichier spécifié. Le paramètre `/N` affiche les numéros de ligne.  
-    `FINDSTR /S /I <Chaine> *.*` : Recherche la chaine spécifié dans les fichiers du répertoire et les sous-répertoire selon l'extensions de fichier spécifié.  
-
-17. **MORE**  
-    Affiche les sorties écran par écran. Permet aussi d'afficher le contenu d'un fichier texte.  
-    `MORE <Fichier>` : Affiche le contenu du fichier spécifié.  
-    `CHKDSK /? | MORE /C /E` : Affiche la sortie de la commande (ici l'aide de la commande `CHKDSK`) et l'affiche page par page. Il faut appuyer sur la touche espace pour faire défiler les pages, ou entré pour faire du ligne par ligne. `/C`permet d'effacer l'écran avant l'affichage.  
-
-18. **CLS**  
-    Efface l'écran.
-    `CLS`
-
-19. **EXIT**  
-    Quitte le programme ou le script.  
-    `EXIT`
-
-20. **SORT**  
-    Permet de trier le texte d'une commande ou d'un fichier.  
-    `SORT <fichier1> > <fichier2>` : Trie le contenu du fichier 1 et place le résultat dans le fichier 2.  Le paramètre `/R` permet d'inverser le sens du tris.  
-
-21. **TYPE**  
-    Affiche le contenu d'un ou plusieurs fichiers textes.  
-    `TYPE <fichier>` : Affiche le contenu du fichier spécifié.  
-
-22. **ERASE**  
-    Supprime un ou plusieurs fichiers.  
-    `ERASE <fichier>` : Supprime le fichier spécifié.  
+21. **XCOPY**  
+    Permet la copie de fichier et de dossiers.  
+    `XCOPY /I /S A:\ B:\` : Copie les fichiers et les dossiers du lecteur `A:` vers le lecteur `B:`. Le paramètre /I va créer le répertoire de destination si il n'existe pas. Le paramètre /S spécifie de copier tous les fichiers et répertoires sauf ceux vides.
 
 ## 🧑‍💻 Utilisateurs
 
