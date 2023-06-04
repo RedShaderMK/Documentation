@@ -146,15 +146,15 @@ Il est possible d'insérer des paragraphes sous les listes à puces, exemple :
 ```markdown
 Pour sauvegarder le projet, vous devez :
 
-* Créer le dossier dans le répertoire
+- Créer le dossier dans le répertoire
 
     De préférence dans le dossier utilisateur.
 
-* Ensuite faire un `CTRL+S`
+- Ensuite faire un `CTRL+S`
 
     Une fenêtre d'enregistrement doit normalement s'afficher.
 
-* Cliquer sur enregistrer
+- Cliquer sur enregistrer
 
     Vous pouvez aller vérifier si le fichier a bien été enregistré.
 ```
@@ -163,15 +163,15 @@ Ce qui donne :
 
 Pour sauvegarder le projet, vous devez :
 
-* Créer le dossier dans le répertoire
+- Créer le dossier dans le répertoire
 
     De préférence dans le dossier utilisateur.
 
-* Ensuite faire un `CTRL+S`
+- Ensuite faire un `CTRL+S`
 
     Une fenêtre d'enregistrement doit normalement s'afficher.
 
-* Cliquer sur enregistrer
+- Cliquer sur enregistrer
 
     Vous pouvez aller vérifier si le fichier a bien été enregistré.
 
