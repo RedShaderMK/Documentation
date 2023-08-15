@@ -2,7 +2,7 @@
 
 > Testé sur Windows 10 et 11.
 
-![CMD](../res/cmd/cmd_illu.png)
+![CMD](../../res/cmd/cmd_illu.png/res/cmd/cmd_illu.png)
 
 - [📋 Liste des commandes pratiques de CMD](#-liste-des-commandes-pratiques-de-cmd)
   - [📜 Introduction](#-introduction)

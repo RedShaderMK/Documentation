@@ -26,7 +26,7 @@ Get-NetAdapter
 
 Voici un exemple de ce qu'on obtient :
 
-![Interface réseau](./res/InterfaceReseauPwsh.png)
+![Interface réseau](../res/InterfaceReseauPwsh.png)
 
 ## 📌 Ajout d'une adresse IP
 
