@@ -346,3 +346,11 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
 
 2. **CHKDSK**  
     Cette commande permet de vérifier l’intégrité du système de fichiers et des disques durs.
+
+3. **FORMAT**  
+    Cette commande permet de formater des disques.  
+    `/FS:<Système de fichier>` : Spécifie le système de fichier. On peut choisir entre `FAT`, `FAT32`, `exFAT`, `NTFS`, `UDF`, `ReFS`.  
+    `/Q` : Effectue un formatage rapide.  
+    `/C` : Les nouveaux fichiers seront compressés (NTFS uniquement).  
+    `/X` : Force le volume à être démonté d’abord si nécessaire. Tous les descripteurs ouverts sur le volume ne seront plus valides.  
+    `/R:<révision>` : Force le formatage à une version UDF spécifique (1.02, 1.50, 2.00, 2.01, 2.50). La révision par défaut est 2.01 (UDF uniquement).  
