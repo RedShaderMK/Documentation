@@ -7,7 +7,7 @@ Pour les utiliser, il faut passer par l'utilitaire `Exécuter`.
 
 <!-- https://www.malekal.com/liste-des-commandes-utilitaires-windows-fichier-msc-cpl/ -->
 
-## Utilitaire Windows
+## 🔧 Utilitaire Windows
 
 | Commande | Description |
 |:---:|---|
@@ -48,7 +48,7 @@ Pour les utiliser, il faut passer par l'utilitaire `Exécuter`.
 | `wiaacmgr` | Ouvre l'interface de gestion et de configurations des scanners. |
 | `winver` | Affiche la fenêtre de version de Windows. |
 
-## Commande MSC
+## 🔧 Commande MSC
 
 | Commande | Description |
 |:---:|---|
