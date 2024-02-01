@@ -47,3 +47,19 @@ Pour les utiliser, il faut passer par l'utilitaire `Exécuter`.
 | `utilman` | Ouvre les paramètres d'accessibilité. |
 | `wiaacmgr` | Ouvre l'interface de gestion et de configurations des scanners. |
 | `winver` | Affiche la fenêtre de version de Windows. |
+
+## Commande MSC
+
+| Commande | Description |
+|:---:|---|
+| `compmgmt.msc` | Gestion de l'ordinateur |
+| `devmgmt.msc` | Gestionnaire de périphérique |
+| `diskmgmt.msc` | Gestionnaire de disques |
+| `eventvwr.msc` | Observateur d'évènements |
+| `fsmgmt.msc` | Partage de dossier Windows |
+| `gpedit.msc` | Éditeur de stratégie de groupe (Windows Pro) |
+| `lusrmgr.msc` | Gérer les utilisateurs et les groupes |
+| `services.msc` | Console de gestion des services Windows |
+| `taskschd.msc` | Console du planificateur de tâches |
+| `tpm.msc` | Gestion du TPM |
+| `wf.msc` | Pare-feu avec options avancés |
