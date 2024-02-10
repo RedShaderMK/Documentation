@@ -2,6 +2,15 @@
 
 Il est possible de contrôler Windows Defender avec PowerShell.
 
+- [🛡️ Utilisation de Windows Defender en ligne de commande](#️-utilisation-de-windows-defender-en-ligne-de-commande)
+  - [✅ État](#-état)
+  - [⌛ Mise à jour](#-mise-à-jour)
+  - [🔬 Analyses](#-analyses)
+    - [🟢 Rapide](#-rapide)
+    - [🟢 Complète](#-complète)
+    - [🟢 Personnalisé](#-personnalisé)
+    - [🟢 Hors-ligne](#-hors-ligne)
+
 ## ✅ État
 
 Il est possible de consulter les informations de l'antivirus directement avec une ligne de commande.  
