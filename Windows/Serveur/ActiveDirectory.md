@@ -30,7 +30,7 @@
 
     ![Configuration AD 5](./res/AD08.png)
 
-9. Cliquer sur `Ìnstaller`. La machine va ensuite redémarrer pour terminer l'installation. Vous pouvez vérifier ensuite que le domaine est bien actif dans le gestionnaire de serveur.  
+9. Cliquer sur `Installer`. La machine va ensuite redémarrer pour terminer l'installation. Vous pouvez vérifier ensuite que le domaine est bien actif dans le gestionnaire de serveur.  
     > ℹ Domaine doit avoir remplacé le groupe de travail.  
 
     ![Configuration AD 6](./res/AD09.png)
