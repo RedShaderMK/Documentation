@@ -3,7 +3,7 @@
 Voici une liste des commandes qui peuvent simplifier l'accès à certains dossier ou fonctionnalités.  
 Pour les utiliser, il faut passer par l'utilitaire `Exécuter`.  
 
-<!-- Placer ici l'image d'exécuter -->
+![Image de la fenêtre exécuter](./res/Execute.png)
 
 <!-- https://www.malekal.com/liste-des-commandes-utilitaires-windows-fichier-msc-cpl/ -->
 
