@@ -149,6 +149,7 @@ L’invite de commande (cmd.exe) est un interpréteur de commandes pour les syst
     `ATTRIB -R fichier.txt` : Supprime (-) l'attribut de lecture seul au fichier.  
 
     Liste des attributs
+
     | Attribut | Description |
     | --- | --- |
     | `R` | Lecture seule |
