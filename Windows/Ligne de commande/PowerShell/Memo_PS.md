@@ -7,27 +7,47 @@
 `Set-Location`  
 Cette commande permet de se déplacer dans l'arborescence.
 
-`Clear-Host`
+`Clear-Host`  
+Permet d'effacer l'affichage de la console.
 
-`Compare-Object`
+`Compare-Object`  
+Permet de comparer deux fichiers et d'afficher les différences.
 
-`Copy-Item`
+`Copy-Item`  
+Permet de copier un fichier.
 
-`Remove-Item`
+`Remove-Item`  
+Permet de supprimer un fichier.
 
-`Get-ChildItem`
+`Get-ChildItem`  
+Permet d'obtenir les éléments d'un emplacement spécifié.
 
-`Select-String`
+`Select-String`  
+Permet de rechercher du texte dans des fichiers ou des chaines de caractères.
 
-`New-Item`
+`New-Item`  
+Permet de créer des fichiers.
 
-`Out-Host -Paging`
+`Out-Host -Paging`  
+Permet l'affichage de la sortie.
 
-`Move-Item`
+`Move-Item`  
+Permet de déplacer un ou des fichiers.
 
-`Rename-Item`
+`Rename-Item`  
+Permet de renommer des fichiers.
 
-`Sort-Object`
+`Sort-Object`  
+Permet de trier une sortie.
 
-`Get-Content`
+`Get-Content`  
+Permet d'obtenir le contenu d'un fichier.
+
+## 🧑‍💻 Utilisateurs
+
+Voir Utilisateurs
+
+## 💻 Système
+
+`Set-Clipboard` & `Get-Clipboard`
 
