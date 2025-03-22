@@ -43,6 +43,12 @@ Permet de trier une sortie.
 `Get-Content`  
 Permet d'obtenir le contenu d'un fichier.
 
+`Push-Location`  
+Permet d'ajouter l'emplacement actuel dans la pile d'emplacement.
+
+`Pop-Location`  
+Permet de remplacer l'emplacement actuel par le dernier enregister dans la pile précédement.
+
 ## 🧑‍💻 Utilisateurs
 
 Voir Utilisateurs
@@ -50,4 +56,3 @@ Voir Utilisateurs
 ## 💻 Système
 
 `Set-Clipboard` & `Get-Clipboard`
-
